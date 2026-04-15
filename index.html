@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Meeting minutes for a sample team meeting"
+    />
+    <title>Pomodoro Timer First Brainstorm</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <h2>Brainstorming Meeting</h2>
+      <p>Date: April 14, 2026</p>
+    </header>
+
+    <hr />
+
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished">Unfinished Business</a></li>
+        <li><a href="#new">New Business</a></li>
+        <li><a href="#misc">Misc</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+
+        <div>
+          <p>
+            <strong>Present:</strong> Adithya, <span>Alex</span>, Jamie, Chris
+          </p>
+          <p><b>Absent:</b> Taylor</p>
+        </div>
+
+        <p>
+          <i>Note:</i> Everyone was mostly on time.<br />Meeting started about 5
+          minutes late.
+        </p>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Discuss app idea</li>
+          <li>Choose basic features</li>
+          <li>Talk about team roles</li>
+          <li>Set goals for next meeting</li>
+        </ol>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>
+          We still need to decide how the timer notifications should work and
+          whether users can customize study sessions. See
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API"
+            target="_blank"
+            >MDN Notifications API</a
+          >
+          for reference.
+        </p>
+        <ul>
+          <li>Timer notification style</li>
+          <li>Custom session lengths</li>
+          <li>Sound options</li>
+        </ul>
+      </section>
+
+      <section id="new">
+        <h2>New Business</h2>
+        <h3>Ideas Mentioned</h3>
+        <p>
+          We talked about adding task tracking, daily streaks, and a simple
+          statistics page.
+        </p>
+      </section>
+
+      <section id="misc">
+        <h2>Miscellaneous Comments, Questions, and Concerns</h2>
+        <p>
+          One concern was keeping the app <em>simple</em> at first so we do not
+          overbuild the first version.
+        </p>
+      </section>
+
+      <section id="media">
+        <h2>Meeting Media</h2>
+
+        <h3>Whiteboard Diagram</h3>
+        <img
+          src="diagram.png"
+          alt="Whiteboard diagram of app ideas"
+          width="300"
+        />
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video width="320" height="240" controls>
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <section id="extra-notes">
+        <h2>Extra Notes</h2>
+
+        <details>
+          <summary>Click to view a quick meeting recap</summary>
+          <p>
+            The team agreed to start with a simple Pomodoro timer and leave
+            advanced features for later.
+          </p>
+        </details>
+      </section>
+    </main>
+
+    <form>
+      <fieldset>
+        <legend>Quick Feedback Form</legend>
+
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </p>
+
+        <p>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" />
+        </p>
+
+        <p>Was the meeting helpful?</p>
+        <input type="radio" id="yes" name="helpful" value="yes" />
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="helpful" value="no" />
+        <label for="no">No</label>
+
+        <p>What topics were discussed?</p>
+        <input type="checkbox" id="ui" name="topic1" value="ui" />
+        <label for="ui">UI ideas</label>
+
+        <input type="checkbox" id="features" name="topic2" value="features" />
+        <label for="features">Features</label>
+
+        <p>
+          <label for="role">Choose a team role:</label>
+          <input list="roles" id="role" name="role" />
+          <datalist id="roles">
+            <option value="Frontend"></option>
+            <option value="Backend"></option>
+            <option value="Designer"></option>
+            <option value="Project Manager"></option>
+          </datalist>
+        </p>
+
+        <p>
+          <label for="team">Choose a team:</label>
+          <select id="team" name="team">
+            <option value="alpha">Alpha</option>
+            <option value="beta">Beta</option>
+            <option value="gamma">Gamma</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="comments">Additional Comments:</label><br />
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </p>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <p>Created by Adithya</p>
+    </footer>
+  </body>
+</html>
